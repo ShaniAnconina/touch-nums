@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch the Numbers</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="onInit()">
+
+    <h1>Touch the Numbers</h1>
+    <p>click the buttons in a sequence (1, 2, 3,…)</p>
+    <h2>choose level:</h2>
+
+    <button onclick="onChooseLevel(4)">Eazy</button>
+    <button onclick="onChooseLevel(5)">Hard</button>
+    <button onclick="onChooseLevel(6)">Extreme</button>
+
+    <div class="time">Your time: <span>00:00</span></div>
+    <div class="next-num">The next number is: 1</div><br>
+    
+    <table border="1" cellpadding="20">
+        <tbody class="board">
+
+        </tbody>
+    </table>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
